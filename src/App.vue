@@ -1,8 +1,9 @@
-<script setup></script>
+<script setup>
+import NavBar from './components/NavBar.vue'
+</script>
 
 <template>
-  <h1>Career Board</h1>
-  <h1 class="text-1xl font-bold underline">Hello world!</h1>
+  <NavBar />
 </template>
 
 <style scoped></style>
