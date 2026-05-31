@@ -11,24 +11,24 @@
   <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
     <a
       href="/jobs"
-      class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
+      class="block bg-gray-900 hover:bg-gray-800 text-white text-center py-4 px-6 rounded-xl"
       >View All Jobs</a
     >
   </section>
 </template>
 
 <script setup>
-import jobData from '../jobs.json'
-import JobListing from './JobListing.vue'
-import { ref } from 'vue'
-const jobs = ref(jobData)
+import jobData from '../jobs.json';
+import JobListing from './JobListing.vue';
+import { ref } from 'vue';
+const jobs = ref(jobData);
 defineProps({
   limit: Number,
   showButton: {
     type: Boolean,
     default: false,
   },
-})
+});
 </script>
 
 <style lang="scss" scoped></style>
